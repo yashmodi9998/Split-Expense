@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Split Expenses</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Split Expenses</h1>
+    </div>
+    <main>
+      <div class="container">
+        <div>
+          <h2>Add New Expense</h2>
+          <p>
+            This app is use to keep track of shared expenses and balances with
+            three roommates.
+          </p>
+          <form action="#" method="post" id="splitForm" name="splitForm">
+            <!-- <fieldset> -->
+            <p>
+              <label for="ex_desc">Expense Description</label>
+              <input
+                type="text"
+                id="expense-description"
+                name="expense_description"
+              />
+            </p>
+            <p>
+              <label for="ex_amount">Expense Amount</label>
+              <input
+                type="number"
+                step="0.01"
+                id="expense-amount"
+                name="expense_amount"
+              />
+            </p>
+            <p>
+              <label for="ex_paidby">Paid By</label>
+              <select id="expense-payer" name="expense_payer">
+                <option value="0">==SELECT==</option>
+                <option value="Yash Modi">Yash Modi</option>
+                <option value="Sean Doyel">Sean Doyel</option>
+                <option value="Donald Trump">Donald Trump</option>
+              </select>
+            </p>
+            <p>
+              <label for="ex_splitbetween">Split Between</label>
+              <input
+                type="checkbox"
+                name="splitbetween[]"
+                value="Yash Modi"
+              />Yash Modi
+              <input
+                type="checkbox"
+                name="splitbetween[]"
+                value="Sean Doyel"
+              />Sean Doyel
+              <input
+                type="checkbox"
+                name="splitbetween[]"
+                value="Donald Trump"
+              />Donald Trump
+            </p>
+            <p>
+              <label for="ex_error" id="ex_error"></label>
+            </p>
+            <p>
+              <input
+                type="submit"
+                value="Add Amount"
+                name="submit"
+                class="submit_btn"
+              />
+            </p>
+            <!-- </fieldset> -->
+          </form>
+        </div>
+      </div>
+      <div>
+        <div class="container">
+          <div class="expenses">
+            <h2>Expenses</h2>
+            <ol id="expense-list"></ol>
+          </div>
+          <div class="balances">
+            <h2>Member Balances</h2>
+            <ul id="balance-list"></ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

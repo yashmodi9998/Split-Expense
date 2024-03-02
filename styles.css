@@ -1,0 +1,75 @@
+ 
+ body{
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: beige;
+ }
+ .header{
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  background-image: linear-gradient(to left, #64bc74, #00ff66);
+ }
+ .container {
+  padding-top:50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  }
+  ul {
+	list-style: none;
+	padding: 0;
+  }
+  ol{
+  border: 10px;
+  }
+  
+  li {
+	margin: 15px;
+  }
+  form{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  padding: 25px;
+  }
+  input{
+    width: auto;
+    border: none;
+    padding: 5px;
+  }
+
+  label{
+    font-weight:600 ;
+  }
+  .submit_btn {
+	margin: 5px;
+  width: 100;
+  background-color: #00ff66;
+  }
+  expense-list li{
+    color: aqua;
+  }
+  h1, h2 {
+  text-align: center;
+  margin: 0px;
+  }
+  .expenselist{
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+  .owed{
+    color:red;
+  }
+  
+  .owes{
+    color:green;
+  }
+  .settled{
+    color:green;
+    font-weight: 600;
+  }
+  #ex_error{
+    color: red;
+    font-size: 15px;
+    font-weight: 600;
+  }
